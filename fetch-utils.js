@@ -21,7 +21,8 @@ export async function deleteBunny(id) {
     const response = await client
         .from('fuzzy_bunnies')
         .delete()
-        .match(id);
+        .match(id)
+        .single();
     return checkError(response);
 }
 
