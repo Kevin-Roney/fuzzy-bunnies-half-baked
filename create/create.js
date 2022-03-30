@@ -22,6 +22,7 @@ form.addEventListener('submit', async e => {
         family_id: familyId
     });
     form.reset();
+    window.location.href = '../families';
 });
 
 window.addEventListener('load', async () => {
